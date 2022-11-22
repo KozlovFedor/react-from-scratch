@@ -1,0 +1,22 @@
+{
+  "name": "react-from-scratch",
+  "version": "1.0.0",
+  "description": "React from scratch app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KozlovFedor/react-from-scratch.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "F. Kozlov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KozlovFedor/react-from-scratch/issues"
+  },
+  "homepage": "https://github.com/KozlovFedor/react-from-scratch#readme"
+}
