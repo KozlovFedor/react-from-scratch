@@ -32,3 +32,5 @@ Action log:
 6. install webpack and loaders
 6.1. npm i --save-dev webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin mini-css-extract-plugin babel-loader
 6.2. add webpack.config.ts
+
+7. add scripts to package.json
