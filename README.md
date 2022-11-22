@@ -4,6 +4,7 @@ Creating React application and setting all neccessary toolchain
 
 Using following tutorial
 https://medium.com/@JedaiSaboteur/creating-a-react-app-from-scratch-f3c693b84658
+https://dev.to/alekseiberezkin/setting-up-react-typescript-app-without-create-react-app-oph
 
 Pre-requirements:
 - npm: npm install -g npm@9.1.2
@@ -23,3 +24,7 @@ Action log:
 4.2. For transform code to "more traditional javascript"
     npm install --save-dev @babel/preset-env @babel/preset-react
 4.3. add babel.config.json
+
+5. install typescript
+5.1. npm i --save-dev typescript
+5.2. add tsconfig.json
