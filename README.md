@@ -8,7 +8,10 @@ Pre-requirements:
 Action log:
 
 1. Create repo on GitHub
-1.1 git clone repo
+1.1. git clone repo
 
 2. npm init
+
+3. add public/index.html
+3.1. add .gitignore (including node_modules/, dist/)
 
