@@ -22,9 +22,13 @@ Action log:
 4. install babel
 4.1. npm install --save-dev @babel/core @babel/cli
 4.2. For transform code to "more traditional javascript"
-    npm install --save-dev @babel/preset-env @babel/preset-react
+    npm install --save-dev @babel/preset-env @babel/preset-react @babel/preset-typescript (@babel/plugin-transform-runtime')
 4.3. add babel.config.json
 
 5. install typescript
 5.1. npm i --save-dev typescript
 5.2. add tsconfig.json
+
+6. install webpack and loaders
+6.1. npm i --save-dev webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin mini-css-extract-plugin babel-loader
+6.2. add webpack.config.ts
