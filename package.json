@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/KozlovFedor/react-from-scratch/issues"
   },
-  "homepage": "https://github.com/KozlovFedor/react-from-scratch#readme"
+  "homepage": "https://github.com/KozlovFedor/react-from-scratch#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6"
+  }
 }
