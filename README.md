@@ -34,3 +34,7 @@ Action log:
 6.2. add webpack.config.ts
 
 7. add scripts to package.json
+
+8. install React
+8.1. npm i react react-dom
+8.2. npm i --save-dev @types/react @types/react-dom
