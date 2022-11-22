@@ -38,3 +38,5 @@ Action log:
 8. install React
 8.1. npm i react react-dom
 8.2. npm i --save-dev @types/react @types/react-dom
+
+9. create src/index.tsx
