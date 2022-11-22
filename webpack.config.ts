@@ -1,3 +1,4 @@
+import path from 'path';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
@@ -10,9 +11,6 @@ export default (options: Options) => {
   return {
     mode: options.mode,
     entry: './src/index.tsx',
-    output: {
-      path: __dirname + '/dist/',
-    },
     module: {
       rules: [
         {
@@ -38,11 +36,35 @@ export default (options: Options) => {
         },
       ]
     },
+    resolve: {
+      modules: [
+        path.resolve(__dirname, './src'),
+        'node_modules',
+      ],
+      extensions: [
+        '.ts', '.tsx', '.js', '.jsx',
+        '.png', '.gif', 'jpg', 'jpeg', 'svg',
+        '.scss', '.css',
+        '.json',
+      ],
+    },
+    output: {
+      path: path.resolve(__dirname, "dist/"),
+      publicPath: "/",
+      filename: "bundle.js",
+    },
+    devServer: {
+      contentBase: path.join(__dirname, "public/"),
+      port: 3000,
+      publicPath: "http://localhost:3000/",
+      hotOnly: true,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: 'index.html',
       }),
       new MiniCssExtractPlugin(),
+      // new webpack.HotModuleReplacementPlugin()
     ],
     devtool: prod ? undefined : 'source-map',
   };
