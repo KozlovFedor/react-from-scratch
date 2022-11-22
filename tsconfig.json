@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
       "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
       "jsx": "react",
-      "module": "esnext",
+    //   "module": "esnext",
       "moduleResolution": "node",
       "lib": [
         "dom",
@@ -16,4 +17,3 @@
       "node_modules"
     ]
   }
-  

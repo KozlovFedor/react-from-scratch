@@ -16,7 +16,7 @@ Action log:
 
 2. npm init
 
-3. add public/index.html
+3. add index.html
 3.1. add .gitignore (including node_modules/, dist/)
 
 4. install babel
@@ -26,7 +26,7 @@ Action log:
 4.3. add babel.config.json
 
 5. install typescript
-5.1. npm i --save-dev typescript
+5.1. npm i --save-dev typescript ts-node @types/node @types/webpack
 5.2. add tsconfig.json
 
 6. install webpack and loaders

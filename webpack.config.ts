@@ -49,15 +49,18 @@ export default (options: Options) => {
       ],
     },
     output: {
-      path: path.resolve(__dirname, "dist/"),
-      publicPath: "/",
-      filename: "bundle.js",
+      path: path.resolve(__dirname, 'dist/'),
+      publicPath: '/',
+      filename: 'bundle.js',
     },
     devServer: {
-      contentBase: path.join(__dirname, "public/"),
+      static: {
+        directory: path.join(__dirname, './public'),
+        publicPath: '/public',
+      },
       port: 3000,
-      publicPath: "http://localhost:3000/",
-      hotOnly: true,
+      // publicPath: "http://localhost:3000/",
+      hot: true,
     },
     plugins: [
       new HtmlWebpackPlugin({
